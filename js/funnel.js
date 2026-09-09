@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statsDone = true;
         $$('.f-stat-num').forEach(countUp);
         obs.disconnect();
-      }
+      }  
     });
   }, { threshold: 0.4 });
   const statsRow = $('.f-stats-row');
@@ -101,12 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!hamburger || !mobileMenu) return;
     hamburger.classList.toggle('is-open', open);
     mobileMenu.classList.toggle('is-open', open);
+    mobileMenu.setAttribute('aria-hidden', !open);
     document.body.style.overflow = open ? 'hidden' : '';
   }
   if (hamburger) hamburger.addEventListener('click', () => toggleMobileMenu(!mobileMenu.classList.contains('is-open')));
   const mobileClose = $('#f-mobile-close');
   if (mobileClose) mobileClose.addEventListener('click', () => toggleMobileMenu(false));
   $$('.f-mobile-link').forEach(l => l.addEventListener('click', () => toggleMobileMenu(false)));
+  const mobileCta = $('.f-mobile-cta');
+  if (mobileCta) mobileCta.addEventListener('click', () => toggleMobileMenu(false));
 
   /* -------------------------------------------------------------------------
      7. MULTI-STEP FORM STATE MACHINE
@@ -657,6 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroContent = $('.f-hero-content');
 
   function updateHeroParallax() {
+    if (window.innerWidth <= 768) return;
     const y = window.scrollY;
     const h = window.innerHeight;
     if (y <= h * 1.25) {

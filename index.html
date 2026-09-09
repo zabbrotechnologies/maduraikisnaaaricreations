@@ -77,7 +77,7 @@
       </nav>
 
       <!-- Nav CTA -->
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <div class="f-nav-actions">
         <button class="f-nav-cta" data-open-modal="true">
           <span>Get My Design</span>
         </button>
@@ -89,10 +89,21 @@
         </button>
       </div>
     </div>
+  </header>
 
-    <!-- Mobile Drawer Menu -->
-    <div id="f-mobile-menu" class="f-mobile-menu" aria-label="Mobile Navigation">
+  <!-- Mobile Drawer Menu (Outside header to prevent backdrop-filter stacking context bugs) -->
+  <div id="f-mobile-menu" class="f-mobile-menu" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="f-mobile-menu-header">
+      <div class="f-mobile-brand">
+        <img src="images/mk-logo.jpg" alt="Madurai Kisna Aari Works Logo" class="f-mobile-logo-img"/>
+        <div>
+          <span class="f-mobile-brand-name">MADURAI KISNA</span>
+          <span class="f-mobile-brand-sub">AARI WORKS • BRIDAL COUTURE</span>
+        </div>
+      </div>
       <button id="f-mobile-close" class="f-mobile-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="f-mobile-links-container">
       <a href="#home" class="f-mobile-link">Home</a>
       <a href="#problem" class="f-mobile-link">Why Us</a>
       <a href="#solution" class="f-mobile-link">The Craft</a>
@@ -101,12 +112,14 @@
       <a href="#portfolio" class="f-mobile-link">Gallery</a>
       <a href="#trust" class="f-mobile-link">Reviews</a>
       <a href="#faq" class="f-mobile-link">FAQ</a>
+    </nav>
+    <div class="f-mobile-footer">
       <button class="f-mobile-cta" data-open-modal="true">
         <span>Get My Custom Design</span>
         <span class="material-symbols-outlined">arrow_forward</span>
       </button>
     </div>
-  </header>
+  </div>
 
   <main>
 

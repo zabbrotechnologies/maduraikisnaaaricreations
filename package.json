@@ -1,0 +1,24 @@
+{
+  "name": "kisna",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zabbrotechnologies/maduraikisnaaaricreations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zabbrotechnologies/maduraikisnaaaricreations/issues"
+  },
+  "homepage": "https://github.com/zabbrotechnologies/maduraikisnaaaricreations#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
