@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const eventDate = dateInput && dateInput.value ? dateInput.value : 'Not fixed yet';
     const notes = notesInput && notesInput.value ? notesInput.value.trim() : 'I would like to consult on designs, color matching, and quotation.';
 
-    const phoneNum = window.ATELIER_CONFIG?.whatsappNumber || '919842102938';
+    const phoneNum = window.ATELIER_CONFIG?.whatsappNumber || '916384998100';
 
     const formattedMessage =
       `*New Atelier Enquiry — ${window.ATELIER_CONFIG?.brandName || 'Madurai Kisna Aari Works'}*%0A%0A` +
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const waText = encodeURIComponent(`Hello Madurai Kisna Aari Works!\n\nName: ${name}\nPhone: ${phone}\nMessage: ${message || '(no message)'}`);
       
       const link = document.createElement('a');
-      link.href = `https://wa.me/919842102938?text=${waText}`;
+      link.href = `https://wa.me/916384998100?text=${waText}`;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       document.body.appendChild(link);

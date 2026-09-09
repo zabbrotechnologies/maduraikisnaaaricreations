@@ -11,8 +11,8 @@
 window.ATELIER_CONFIG = {
   brandName: 'Madurai Kisna Aari Works',
   tagline: 'Haute Couture Bridal Atelier',
-  whatsappNumber: '919842102938',
-  phoneDisplay: '+91 (0) 452 234 8990 / +91 98421 02938',
+  whatsappNumber: '916384998100',
+  phoneDisplay: '+91 63849 98100',
   email: 'concierge@maduraikisna.com',
   address: 'East Veli Street, Near Meenakshi Amman Temple Environs, Madurai, Tamil Nadu 625001',
   hours: 'Monday to Saturday: 10:00 AM – 8:30 PM IST | Sunday: By Appointment',

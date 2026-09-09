@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
           formData.notes ? `Notes: ${formData.notes}` : '',
         ].filter(Boolean).join('\n');
 
-        const waUrl = `https://wa.me/919842102938?text=${encodeURIComponent(msg)}`;
+        const waUrl = `https://wa.me/916384998100?text=${encodeURIComponent(msg)}`;
         
         // Bulletproof mobile redirection
         const link = document.createElement('a');

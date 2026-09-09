@@ -87,4 +87,14 @@ test.describe('Mobile Viewport Perfection & Layout Verification', () => {
     await expect(modalOverlay).not.toHaveClass(/is-open/);
   });
 
+  test('Footer and floating WhatsApp links point to +91 63849 98100', async ({ page }) => {
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+    const waFloat = page.locator('.f-whatsapp-float');
+    await expect(waFloat).toHaveAttribute('href', /wa\.me\/916384998100/);
+
+    const footerPhone = page.locator('a[href^="tel:"]');
+    await expect(footerPhone.first()).toHaveAttribute('href', 'tel:+916384998100');
+  });
+
 });
