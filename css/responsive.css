@@ -1,0 +1,238 @@
+/* ==========================================================================
+   AARI WORKS — PREMIUM AARI EMBROIDERY WEBSITE
+   Responsive Stylesheet (responsive.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAPTOP & SMALL DESKTOP BREAKPOINT (max-width: 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLET BREAKPOINT (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* About Section Grid Stack */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-col-left, .about-col-right {
+    grid-column: span 12;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .occasions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Gallery Section */
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-img-col, .featured-info-col {
+    grid-column: span 12;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Why Choose Us & Process */
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enquiry-builder, .studio-info-col {
+    grid-column: span 12;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. MOBILE BREAKPOINT (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Header & Navigation */
+  .header {
+    height: 70px;
+  }
+
+  .mobile-menu {
+    top: 70px;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .btn-primary span:not(.material-symbols-outlined) {
+    font-size: 0.65rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: calc(70px + 1.5rem);
+    padding-bottom: 2rem;
+  }
+
+  .hero-pill-text {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .hero-ctas .btn-primary, .hero-ctas .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trust-badges {
+    gap: 1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+  }
+
+  /* About & Services */
+  .services-header-wrapper {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .occasions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-filters {
+    gap: 0.5rem;
+  }
+
+  .filter-tab {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.65rem;
+  }
+
+  /* Why Choose Us & Process */
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Form Elements */
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .enquiry-builder {
+    padding: 1.5rem;
+  }
+
+  .studio-card {
+    padding: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .sub-footer-links {
+    justify-content: center;
+  }
+
+  /* Lightbox */
+  .lightbox-dialog {
+    max-width: 100%;
+  }
+
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+}
+
+/* --------------------------------------------------------------------------
+   4. SMALL MOBILE BREAKPOINT (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .btn-gold, .btn-outline-gold {
+    width: 100%;
+    justify-content: center;
+  }
+}

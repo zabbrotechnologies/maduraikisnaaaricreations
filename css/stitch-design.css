@@ -1,0 +1,462 @@
+/* ==========================================================================
+   STITCH DESIGN SYSTEM — Kisna Aari Works
+   Clean, premium design inspired by the Stitch-generated mockup
+   Color palette: cream background, maroon/wine headings, sage green accents
+   ========================================================================== */
+
+:root {
+  --sc-cream: #faf8f6;
+  --sc-cream-card: #f5f3f1;
+  --sc-maroon: #4a1728;
+  --sc-maroon-light: #7b2d42;
+  --sc-sage: #5b7e6a;
+  --sc-sage-light: #e8f0eb;
+  --sc-border: #e4ddd8;
+  --sc-text-dark: #2c2c2c;
+  --sc-text-mid: #5a5a5a;
+  --sc-text-light: #888;
+  --sc-pink-icon-bg: #f5e6ec;
+  --sc-font-serif: 'Playfair Display', 'Georgia', serif;
+  --sc-font-sans: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* ==========================================================================
+   SHARED STITCH TYPOGRAPHY
+   ========================================================================== */
+.stitch-eyebrow {
+  display: block;
+  font-family: var(--sc-font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sc-sage);
+  margin-bottom: 0.6rem;
+}
+
+.stitch-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--sc-maroon);
+  margin: 1.2rem auto 0;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   SECTION 3 — SERVICES (Stitch Style)
+   ========================================================================== */
+.stitch-services-section {
+  background: var(--sc-cream);
+  padding: 6rem 0;
+}
+
+.stitch-services-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.stitch-section-title {
+  font-family: var(--sc-font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--sc-maroon);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.stitch-section-title em {
+  font-style: italic;
+  color: var(--sc-maroon-light);
+}
+
+/* 3-column service card grid */
+.stitch-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .stitch-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .stitch-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual card */
+.stitch-service-card {
+  background: var(--sc-cream-card);
+  border: 1px solid var(--sc-border);
+  border-radius: 12px;
+  padding: 2rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stitch-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(74, 23, 40, 0.1);
+}
+
+/* Pink circular icon container */
+.stitch-service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--sc-pink-icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+  flex-shrink: 0;
+}
+
+.stitch-service-icon .material-symbols-outlined {
+  font-size: 1.3rem;
+  color: var(--sc-maroon);
+}
+
+.stitch-service-title {
+  font-family: var(--sc-font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sc-maroon);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.stitch-service-desc {
+  font-family: var(--sc-font-sans);
+  font-size: 0.875rem;
+  color: var(--sc-text-mid);
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+.stitch-service-link {
+  font-family: var(--sc-font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--sc-maroon);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--sc-border);
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.stitch-service-link:hover {
+  color: var(--sc-maroon-light);
+  gap: 0.6rem;
+}
+
+/* ==========================================================================
+   SECTION 4 — GALLERY HEADER (Stitch Style)
+   ========================================================================== */
+.stitch-gallery-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.stitch-gallery-header-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.stitch-gallery-title {
+  font-family: var(--sc-font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--sc-maroon);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.stitch-gallery-title em {
+  font-style: italic;
+  color: var(--sc-maroon-light);
+}
+
+/* Filter tabs on the right */
+.stitch-gallery-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.stitch-filter-tab {
+  font-family: var(--sc-font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--sc-border);
+  background: transparent;
+  color: var(--sc-text-mid);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.stitch-filter-tab:hover {
+  border-color: var(--sc-maroon);
+  color: var(--sc-maroon);
+  background: var(--sc-pink-icon-bg);
+}
+
+.stitch-filter-tab.active {
+  background: var(--sc-maroon);
+  color: #fff;
+  border-color: var(--sc-maroon);
+}
+
+@media (max-width: 768px) {
+  .stitch-gallery-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stitch-gallery-filters {
+    justify-content: flex-start;
+  }
+}
+
+/* ==========================================================================
+   SECTION 6 — CONTACT (Stitch Style)
+   ========================================================================== */
+.stitch-contact-section {
+  background: var(--sc-cream);
+  padding: 6rem 0;
+}
+
+.stitch-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .stitch-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* LEFT COLUMN */
+.stitch-contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stitch-contact-title {
+  font-family: var(--sc-font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--sc-maroon);
+  margin: 0;
+  line-height: 1.15;
+}
+
+.stitch-contact-desc {
+  font-family: var(--sc-font-sans);
+  font-size: 0.9rem;
+  color: var(--sc-text-mid);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.stitch-contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stitch-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-family: var(--sc-font-sans);
+  font-size: 0.875rem;
+  color: var(--sc-text-dark);
+  line-height: 1.5;
+}
+
+.stitch-contact-icon {
+  font-size: 1.15rem !important;
+  color: var(--sc-sage);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.stitch-contact-link {
+  color: var(--sc-maroon);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.stitch-contact-link:hover {
+  color: var(--sc-maroon-light);
+  text-decoration: underline;
+}
+
+/* Map embed */
+.stitch-map-embed {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  margin-top: 0.5rem;
+}
+
+/* RIGHT COLUMN — Form card */
+.stitch-contact-right {
+  position: sticky;
+  top: 100px;
+}
+
+.stitch-form-card {
+  background: #fff;
+  border: 1px solid var(--sc-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 30px rgba(74, 23, 40, 0.06);
+}
+
+.stitch-form-title {
+  font-family: var(--sc-font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--sc-maroon);
+  margin: 0 0 2rem;
+}
+
+.stitch-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stitch-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stitch-form-label {
+  font-family: var(--sc-font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--sc-text-mid);
+  text-transform: uppercase;
+}
+
+.stitch-form-input,
+.stitch-form-textarea {
+  font-family: var(--sc-font-sans);
+  font-size: 0.9rem;
+  color: var(--sc-text-dark);
+  background: var(--sc-cream);
+  border: 1px solid var(--sc-border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.stitch-form-input:focus,
+.stitch-form-textarea:focus {
+  border-color: var(--sc-maroon);
+  box-shadow: 0 0 0 3px rgba(74, 23, 40, 0.08);
+}
+
+.stitch-form-textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.stitch-submit-btn {
+  font-family: var(--sc-font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--sc-maroon);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.stitch-submit-btn:hover {
+  background: var(--sc-maroon-light);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   MOTION HELPERS — slide-in animations for contact columns
+   ========================================================================== */
+.motion-slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-slide-left.in-view,
+.motion-slide-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.motion-card-reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.motion-card-reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Stagger delays for service card grid */
+.stitch-services-grid .stagger-1 { transition-delay: 0.05s; }
+.stitch-services-grid .stagger-2 { transition-delay: 0.12s; }
+.stitch-services-grid .stagger-3 { transition-delay: 0.19s; }
+.stitch-services-grid .stagger-4 { transition-delay: 0.26s; }
+.stitch-services-grid .stagger-5 { transition-delay: 0.33s; }
+.stitch-services-grid .stagger-6 { transition-delay: 0.40s; }
