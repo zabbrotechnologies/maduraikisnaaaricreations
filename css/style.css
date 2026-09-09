@@ -8,42 +8,42 @@
    -------------------------------------------------------------------------- */
 :root {
   /* Color Palette — Luxury Burgundy, Rose Plum & Antique Gold */
-  --color-primary: #775a19;
+  --color-primary: #000000;
   --color-on-primary: #ffffff;
-  --color-primary-container: #c5a059;
-  --color-on-primary-container: #4e3700;
-  --color-primary-fixed: #ffdea5;
-  --color-primary-fixed-dim: #e9c176;
+  --color-primary-container: #111111;
+  --color-on-primary-container: #ffffff;
+  --color-primary-fixed: #000000;
+  --color-primary-fixed-dim: #111111;
 
-  --color-secondary: #8e495b;
+  --color-secondary: #F25A24;
   --color-on-secondary: #ffffff;
-  --color-secondary-container: #fda6b9;
-  --color-on-secondary-fixed-variant: #723243;
+  --color-secondary-container: #FFFFFF;
+  --color-on-secondary-fixed-variant: #000000;
 
-  --color-tertiary: #994157;
+  --color-tertiary: #111111;
   
-  --color-background: #fff8f8;
-  --color-surface: #fff8f8;
-  --color-on-surface: #1f1b1c;
-  --color-on-surface-variant: #4e4639;
+  --color-background: #FFFFFF;
+  --color-surface: #ffffff;
+  --color-on-surface: #000000;
+  --color-on-surface-variant: #111111;
 
   --color-surface-lowest: #ffffff;
-  --color-surface-low: #fbf1f2;
-  --color-surface-container: #f5eced;
-  --color-surface-high: #efe6e7;
-  --color-surface-highest: #e9e0e1;
+  --color-surface-low: #f9f9f9;
+  --color-surface-container: #f1f1f1;
+  --color-surface-high: #ebebeb;
+  --color-surface-highest: #e5e5e5;
 
-  --color-outline: #7f7667;
-  --color-outline-variant: #d1c5b4;
+  --color-outline: #111111;
+  --color-outline-variant: #e5e5e5;
 
-  --color-wine-dark: #3a121d;
-  --color-wine-deep: #240a12;
+  --color-wine-dark: #000000;
+  --color-wine-deep: #111111;
 
   /* Typography Families */
   --font-display: 'Bodoni Moda', serif;
   --font-headline: 'Bodoni Moda', serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-label: 'Inter', sans-serif;
+  --font-body: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-label: 'Hanken Grotesk', sans-serif;
 
   /* Layout Boundaries */
   --max-width: 1440px;
@@ -143,7 +143,7 @@ ul, ol {
 
 /* Text Shimmer Effect */
 .gold-shimmer {
-  background: linear-gradient(135deg, #ffdea5 0%, #e9c176 50%, #c5a059 100%);
+  background: linear-gradient(135deg, #000000 0%, #111111 50%, #111111 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1181,7 +1181,7 @@ ul, ol {
   height: 440px;
   border-radius: 18px;
   overflow: hidden;
-  background-color: #1a0812;
+  background-color: #000000;
   border: 1px solid rgba(197, 160, 89, 0.35);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
   transform-style: preserve-3d;
@@ -1216,7 +1216,7 @@ ul, ol {
   top: 1rem;
   left: 1rem;
   background: rgba(20, 8, 14, 0.88);
-  color: var(--color-primary-fixed, #c5a059);
+  color: var(--color-primary-fixed, #111111);
   border: 1px solid rgba(197, 160, 89, 0.6);
   padding: 0.35rem 0.75rem;
   font-family: var(--font-label);
@@ -1266,7 +1266,7 @@ ul, ol {
 .gallery-card-meta {
   font-family: var(--font-label);
   font-size: 0.65rem;
-  color: var(--color-primary-fixed, #c5a059);
+  color: var(--color-primary-fixed, #111111);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-top: 0.2rem;

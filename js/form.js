@@ -81,7 +81,15 @@ document.addEventListener('DOMContentLoaded', () => {
       `Please connect me with your Master Designer for a 1:1 consultation and quotation.`;
 
     const whatsappUrl = `https://wa.me/${phoneNum}?text=${formattedMessage}`;
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    
+    // Bulletproof mobile redirection
+    const link = document.createElement('a');
+    link.href = whatsappUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   if (enquiryForm) {
@@ -135,7 +143,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('sc-message').value.trim();
       if (!name || !phone) return;
       const waText = encodeURIComponent(`Hello Madurai Kisna Aari Works!\n\nName: ${name}\nPhone: ${phone}\nMessage: ${message || '(no message)'}`);
-      window.open(`https://wa.me/919842102938?text=${waText}`, '_blank', 'noopener,noreferrer');
+      
+      const link = document.createElement('a');
+      link.href = `https://wa.me/919842102938?text=${waText}`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
       stitchForm.reset();
     });
   }

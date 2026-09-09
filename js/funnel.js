@@ -253,7 +253,15 @@ document.addEventListener('DOMContentLoaded', () => {
         ].filter(Boolean).join('\n');
 
         const waUrl = `https://wa.me/919842102938?text=${encodeURIComponent(msg)}`;
-        window.open(waUrl, '_blank', 'noopener,noreferrer');
+        
+        // Bulletproof mobile redirection
+        const link = document.createElement('a');
+        link.href = waUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
 
         // Show success
         const stepsWrap = $('.f-progress-wrap', container);

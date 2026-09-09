@@ -5,17 +5,17 @@
    ========================================================================== */
 
 :root {
-  --sc-cream: #faf8f6;
-  --sc-cream-card: #f5f3f1;
-  --sc-maroon: #4a1728;
-  --sc-maroon-light: #7b2d42;
-  --sc-sage: #5b7e6a;
-  --sc-sage-light: #e8f0eb;
-  --sc-border: #e4ddd8;
+  --sc-cream: #FFFFFF;
+  --sc-cream-card: #FFFFFF;
+  --sc-maroon: #000000;
+  --sc-maroon-light: #111111;
+  --sc-sage: #111111;
+  --sc-sage-light: #FFFFFF;
+  --sc-border: #e5e5e5;
   --sc-text-dark: #2c2c2c;
   --sc-text-mid: #5a5a5a;
   --sc-text-light: #888;
-  --sc-pink-icon-bg: #f5e6ec;
+  --sc-pink-icon-bg: #FFFFFF;
   --sc-font-serif: 'Playfair Display', 'Georgia', serif;
   --sc-font-sans: 'Inter', 'Segoe UI', sans-serif;
 }

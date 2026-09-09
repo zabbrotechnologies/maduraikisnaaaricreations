@@ -7,19 +7,19 @@
    1. DESIGN TOKENS
    --------------------------------------------------------------------------- */
 :root {
-  --f-maroon:        #4a1728;
-  --f-maroon-light:  #7b2d42;
-  --f-maroon-dark:   #2d0e18;
-  --f-gold:          #c9a96e;
-  --f-gold-light:    #e8d5a3;
-  --f-gold-dark:     #a07840;
-  --f-sage:          #5b7e6a;
-  --f-sage-light:    #e8f0eb;
-  --f-cream:         #faf8f6;
-  --f-cream-card:    #f5f3f1;
-  --f-dark:          #1a0d14;
-  --f-dark-mid:      #2c1420;
-  --f-border:        #e4ddd8;
+  --f-maroon:        #000000;
+  --f-maroon-light:  #111111;
+  --f-maroon-dark:   #000000;
+  --f-gold:          #F25A24;
+  --f-gold-light:    #F25A24;
+  --f-gold-dark:     #F25A24;
+  --f-sage:          #111111;
+  --f-sage-light:    #FFFFFF;
+  --f-cream:         #FFFFFF;
+  --f-cream-card:    #FFFFFF;
+  --f-dark:          #000000;
+  --f-dark-mid:      #111111;
+  --f-border:        #e5e5e5;
   --f-text:          #2c2c2c;
   --f-text-mid:      #5a5a5a;
   --f-text-light:    #8a8a8a;
@@ -717,7 +717,7 @@ ul, ol { list-style: none; }
    13. CURATED MASTERPIECES — STITCH ATELIER SIGNATURE BENTO GALLERY
    --------------------------------------------------------------------------- */
 .stitch-gallery-section {
-  background: #f6f3f2;
+  background: #FFFFFF;
   padding: 6rem 0;
   position: relative;
 }
@@ -743,7 +743,7 @@ ul, ol { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #847375;
+  color: #111111;
   margin-bottom: 0.35rem;
 }
 
@@ -751,7 +751,7 @@ ul, ol { list-style: none; }
   font-family: var(--f-serif);
   font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
-  color: #2f0211;
+  color: #000000;
   line-height: 1.15;
   letter-spacing: -0.01em;
 }
@@ -779,14 +779,14 @@ ul, ol { list-style: none; }
 }
 
 .stitch-filter-btn:hover {
-  background: #eae7e7;
-  color: #2f0211;
+  background: #FFFFFF;
+  color: #000000;
   transform: translateY(-1px);
 }
 
 .stitch-filter-btn.is-active {
-  background: #2f0211;
-  border-color: #2f0211;
+  background: #000000;
+  border-color: #000000;
   color: #ffffff;
   box-shadow: 0 4px 14px rgba(47, 2, 17, 0.25);
 }
@@ -836,7 +836,7 @@ ul, ol { list-style: none; }
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 8px 24px rgba(47, 2, 17, 0.08);
-  background: #eae7e7;
+  background: #FFFFFF;
   transition: transform 0.4s var(--f-ease),
               box-shadow 0.4s var(--f-ease),
               opacity 0.4s ease,
@@ -909,7 +909,7 @@ ul, ol { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #e5e2e1;
+  color: #FFFFFF;
   margin-bottom: 0.35rem;
 }
 
@@ -929,7 +929,7 @@ ul, ol { list-style: none; }
   font-family: var(--f-sans);
   font-size: 0.82rem;
   font-weight: 600;
-  color: #ffd9df;
+  color: #F25A24;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.2s ease, gap 0.2s ease;
@@ -1309,7 +1309,7 @@ ul, ol { list-style: none; }
   .f-mobile-menu{display:flex}
   .f-hero-bg{grid-template-columns:repeat(2,1fr)}
   .f-problem-cards,.f-solution-pillars,.f-testimonials-grid,.f-how-steps{grid-template-columns:1fr}
-  .f-services-grid{grid-template-columns:repeat(2,1fr)}
+  .f-services-grid{grid-template-columns:repeat(2,1fr);gap:0.75rem}
   .stitch-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;gap:0.75rem;}
   .f-stats-row{grid-template-columns:repeat(2,1fr)}
   .f-footer-grid{grid-template-columns:1fr;gap:2rem}
@@ -1325,12 +1325,23 @@ ul, ol { list-style: none; }
 }
 @media(max-width:480px){
   .f-svc-grid{grid-template-columns:1fr}
-  .f-stats-row{grid-template-columns:1fr 1fr}
-  .f-services-grid{grid-template-columns:repeat(2,1fr)}
-  .stitch-grid{grid-template-columns:repeat(2,1fr)}
-  .f-service-body{padding:1rem}
-  .f-service-name{font-size:0.9rem}
-  .stitch-card-title{font-size:1rem}
+  .f-stats-row{grid-template-columns:1fr 1fr;gap:0.5rem}
+  .f-stat-item{padding:1.5rem 1rem;}
+  .f-stat-num{font-size:2rem}
+  .f-services-grid{grid-template-columns:repeat(2,1fr);gap:0.5rem}
+  .stitch-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px;gap:0.5rem}
+  .f-service-body{padding:0.75rem;gap:0.4rem}
+  .f-service-name{font-size:0.75rem;line-height:1.2}
+  .f-service-desc{font-size:0.6rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .f-service-tag{font-size:0.55rem;letter-spacing:0.05em}
+  .f-service-benefit{display:none}
+  .f-service-btn{padding:0.5rem;font-size:0.6rem;gap:0.2rem;width:100%}
+  .stitch-card-overlay{padding:0.75rem}
+  .stitch-card-title{font-size:0.8rem;line-height:1.15;margin-bottom:0.25rem}
+  .stitch-card-tag{font-size:0.55rem;margin-bottom:0.25rem}
+  .stitch-card-link{font-size:0.65rem}
+  .f-hero-headline{font-size:clamp(2.2rem, 9vw, 3rem)}
+  .f-container{padding:0 1rem}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
