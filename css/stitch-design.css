@@ -5,19 +5,19 @@
    ========================================================================== */
 
 :root {
-  --sc-cream: #FFFFFF;
+  --sc-cream: #FAF6F0;
   --sc-cream-card: #FFFFFF;
-  --sc-maroon: #000000;
-  --sc-maroon-light: #111111;
-  --sc-sage: #111111;
-  --sc-sage-light: #FFFFFF;
-  --sc-border: #e5e5e5;
-  --sc-text-dark: #2c2c2c;
-  --sc-text-mid: #5a5a5a;
-  --sc-text-light: #888;
-  --sc-pink-icon-bg: #FFFFFF;
-  --sc-font-serif: 'Playfair Display', 'Georgia', serif;
-  --sc-font-sans: 'Inter', 'Segoe UI', sans-serif;
+  --sc-maroon: #5C5248;
+  --sc-maroon-light: #75695D;
+  --sc-sage: #6E4C6D;
+  --sc-sage-light: #F3EEF5;
+  --sc-border: #E5DED5;
+  --sc-text-dark: #2C2520;
+  --sc-text-mid: #5C5248;
+  --sc-text-light: #7D7267;
+  --sc-pink-icon-bg: #F3EEF5;
+  --sc-font-serif: 'Bodoni Moda', Georgia, serif;
+  --sc-font-sans: 'Manrope', 'Segoe UI', sans-serif;
 }
 
 /* ==========================================================================
