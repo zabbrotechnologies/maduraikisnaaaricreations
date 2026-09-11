@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://maduraikisnaaaricreations.com/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://maduraikisnaaaricreations.com/images/hero-aari-master.jpg</image:loc>
+      <image:title>Madurai Kisna Aari Creations - Handcrafted Bridal Blouses</image:title>
+      <image:caption>Authentic Aari hand-embroidery and zardozi needlework in Madurai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://maduraikisnaaaricreations.com/images/stitch-gallery/bridal-crimson.jpg</image:loc>
+      <image:title>Royal Crimson Zardozi Bridal Blouse - Madurai Kisna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maduraikisnaaaricreations.com/images/stitch-gallery/emerald-polki.jpg</image:loc>
+      <image:title>Emerald Polki Bridal Blouse - Madurai Aari Creations</image:title>
+    </image:image>
+  </url>
+</urlset>
