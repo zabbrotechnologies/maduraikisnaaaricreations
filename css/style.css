@@ -40,10 +40,10 @@
   --color-wine-deep: #352D26;
 
   /* Typography Families */
-  --font-display: 'Bodoni Moda', serif;
-  --font-headline: 'Bodoni Moda', serif;
-  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-label: 'Manrope', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --font-headline: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-label: 'Plus Jakarta Sans', sans-serif;
 
   /* Layout Boundaries */
   --max-width: 1440px;
